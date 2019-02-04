@@ -124,12 +124,10 @@ class DoubleLinkedList():
         if node != self.__head:
             node.prev.next = node.next
         else:
-            # node.next = self.__head
             self.__head = node.next
         if node != self.__tail:
             node.next.prev = node.prev
         else:
-            # node.prev = self.__tail
             self.__tail = node.prev
         self.__lenght -= 1
 
