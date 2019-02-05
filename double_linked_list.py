@@ -136,7 +136,7 @@ class DoubleLinkedList():
         self.__delnode(self.__get_node_by_item(item)[1])
 
 
-    def pop(self, index=0):
+    def pop(self, index=-1):
         node = self.__get_node(index)
         self.__delnode(node)
         return node.value
